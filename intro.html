@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Learning HTML & CSS</title> 
+    <style>
+        body {
+            background-color: white;
+            color:black;
+            font-family: "Helvetica", Verdana, Arial, sans-serif;
+            font-size: 14px;
+            text-align:center
+        }
+        #colored-headline {
+            color:rgb(41, 5, 107);
+        }
+        #colored-paragraph {
+            color:rgb(95, 1, 1)
+        }
+        #bg-colored-paragraph {
+            background-color:rgb(41, 5, 107);
+            color:white;
+        }
+        .colored-class {
+            color:red;
+        }
+        a {
+            text-decoration: none;
+            color:steelblue
+        }
+    </style>
+
+</head>
+<body>
+
+    <a target="_blank" href="https://en.wikipedia.org/wiki/HTML">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png" width="128" alt="HTML Icon"> </a>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/CSS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" height="128" alt="CSS Icon"> </a>    
+    
+    <h1>Learning HTML & CSS</h1>
+        <!-- Based on what I've learned on Khan Academy -->
+
+
+        
+        <h4>Lessons from <a href="https://www.khanacademy.org">Khan Academy</a></h4>
+
+        <h4>by Cha0tik</h4>
+        
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#headlines-paragraph">Headlines & Paragraph</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#colored-headline">Colored Text Using "id"</a></li>
+            <li><a href="#colored-class">Colored Text Using "class"</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+
+        <h2 id="headlines-paragraph">Headline & Paragraph</h2>
+        <p>A simple paragraph containing <strong>strong</strong> 
+            and <em>emphasised</em> text.</p>
+        
+        <h2 id="lists">Lists</h2>
+
+        <p>Creating lists using HTML using OL and UL markup tags.<br> 
+            Each item goes inside a LI (list item) markup tag.</p>
+        
+        <h3>Ordered List</h3>
+
+        <p>Below is an <em>ordered</em> list:</p>
+        <ol>
+            <li><strong>First</strong> Item</li>
+            <li><strong>Second</strong> Item</li>
+            <li><strong>Third</strong> Item</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+
+        <p>Below is an <em>unordered</em> list:</p>
+        <ul>
+            <li><strong>First</strong> Item</li>
+            <li><strong>Second</strong> Item</li>
+            <li><strong>Third</strong> Item</li>
+        </ul>   
+
+        <h2 id="colored-headline">Colored Text Using "id"</h2>
+        <p id="colored-paragraph">This is a paragraph, containing text that
+            is colored by <strong>adding a <em>ID</em> to the markup tag</strong>.<br>
+            Each section has its own ID and is colored different.</p>
+        <p id="bg-colored-paragraph">Background text can also be colored using CSS.</p>    
+
+        <h2 class="colored-class" id="colored-class">Colored Text Using "class"</h2>
+        <p class="colored-class">This is a paragraph containing text that is colored by <br><strong>adding a 
+            class to the markup tag.</strong><br><br>
+        As you can see, the background and text are all colored the same since<br> 
+        they all belong to the "colored-class" class.</p>
+        
+        <h2 id="tables">Tables</h2>
+        <p>Creating tables for different kinds of data. <br> Below is an example table.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Data</th>
+                    <th>Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HTML</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JavaScript</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Python</td>
+                    <td>Software Development</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>SQL</td>
+                    <td>Data Management</td>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+</html>
